@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Benvenuto!</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="icon" href="images/icona.png" type="image/png">
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-loading" onload="getTodayDate()">
+        <!-- Wrapper -->
+        <div class="fade-in">
+
+            <!-- Intro -->
+            <div id="intro">
+                <h1>Benvenuto!</h1>
+                <p style="color:white;">Progetto di Mattia Lazzaroni.</p>
+                <ul class="actions">
+                    <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+                </ul>
+            </div>
+
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo">Mattia Lazzaroni</a>
+            </header>
+
+            <!-- Main -->
+            <div id="main">
+                <!-- Featured Post -->
+                <article class="post featured">
+                    <header class="major">
+                        <span class="date" id="todaydate"></span>
+                        <h2><a>Comincia la tua registrazione!</a></h2>
+                        <p style="color:black;">Una volta cominciata la registrazione assicurati di aver riempito tutti i campi obbligatori (contrassegnati da un asterisco). Fatto ciò potrai vedere una tabella contenente tutti i tuoi dati e se vorrai potrai tornare indietro a correggerli. Quando cliccherai il bottone per registrarti i tuoi dati verranno immessi in due files di memorizzazione.</p>
+                        <a href="registrazione.php" class="button big">Registrati</a>
+                    </header>
+                    <hr>
+                </article>
+            </div>
+
+            <!-- Copyright -->
+            <div id="copyright">
+                <ul><li>&copy; Mattia Lazzaroni</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+            </div>
+
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script>
+
+                //Funzione che calcola la data odierna
+
+                function getTodayDate(){
+                    var today = new Date();
+                    var dd = today.getDate();
+                    var mm = today.getMonth()+1; 
+                    var yyyy = today.getFullYear();
+                    if(dd<10){
+                        dd='0'+dd;
+                    } 
+                    if(mm<10){
+                        mm='0'+mm;
+                    } 
+                    var today = dd+'/'+mm+'/'+yyyy;
+                    document.getElementById("todaydate").innerHTML = today;
+                }
+
+                history.pushState(null, null, location.href);
+                window.onpopstate = function () {
+                    history.go(1);
+                };
+                
+            </script>
+        </div>
+    </body>
+</html>
