@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-09-03" view-index="0" gantt-divider-location="386" resource-divider-location="300" version="2.8.9" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-08-27" view-index="0" gantt-divider-location="293" resource-divider-location="300" version="2.8.9" locale="it">
     <description/>
     <view zooming-state="default:6" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="184" order="0"/>
-        <field id="tpd4" name="Data d'inizio" width="107" order="1"/>
-        <field id="tpd5" name="Data di fine" width="91" order="2"/>
+        <field id="tpd3" name="Nome" width="137" order="0"/>
+        <field id="tpd4" name="Data d'inizio" width="82" order="1"/>
+        <field id="tpd5" name="Data di fine" width="70" order="2"/>
     </view>
     <view id="resource-table">
         <field id="0" name="Nome" width="210" order="0"/>
@@ -34,7 +34,7 @@
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
         <task id="0" name="Analisi" color="#8cb6ce" meeting="false" start="2018-09-05" duration="10" complete="0" thirdDate="2018-09-19" thirdDate-constraint="0" expand="true">
-            <task id="104" name="Analisi dominio" meeting="false" start="2018-09-05" duration="10" complete="0" expand="true">
+            <task id="104" name="Analisi dominio" meeting="false" start="2018-09-05" duration="6" complete="0" expand="true">
                 <depend id="4" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="111" name="Raccolta requisiti" color="#8cb6ce" meeting="false" start="2018-09-07" duration="2" complete="0" thirdDate="2018-09-07" thirdDate-constraint="0" expand="true">
@@ -43,27 +43,19 @@
             <task id="113" name="Analisi requisiti" color="#8cb6ce" meeting="false" start="2018-09-11" duration="3" complete="0" thirdDate="2018-09-11" thirdDate-constraint="0" expand="true"/>
             <task id="116" name="Analisi dei mezzi" meeting="false" start="2018-09-14" duration="3" complete="0" expand="true"/>
         </task>
-        <task id="4" name="Progettazione" color="#8cb6ce" meeting="false" start="2018-09-19" duration="22" complete="0" thirdDate="2018-09-07" thirdDate-constraint="0" expand="true">
+        <task id="4" name="Progettazione" color="#8cb6ce" meeting="false" start="2018-09-13" duration="11" complete="0" thirdDate="2018-09-07" thirdDate-constraint="0" expand="true">
             <depend id="24" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="24" name="Implementazione" color="#8cb6ce" meeting="false" start="2018-10-19" duration="5" complete="0" thirdDate="2018-09-10" thirdDate-constraint="0" expand="true">
-            <depend id="16" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="16" name="Testing" color="#8cb6ce" meeting="false" start="2018-10-26" duration="5" complete="0" thirdDate="2018-11-07" thirdDate-constraint="0" expand="true">
-            <depend id="118" type="2" difference="0" hardness="Strong"/>
-        </task>
+        <task id="24" name="Implementazione" color="#8cb6ce" meeting="false" start="2018-09-28" duration="29" complete="0" thirdDate="2018-09-10" thirdDate-constraint="0" expand="true"/>
+        <task id="16" name="Testing" color="#8cb6ce" meeting="false" start="2018-09-28" duration="30" complete="0" thirdDate="2018-11-07" thirdDate-constraint="0" expand="true"/>
         <task id="6" name="Documentazione" color="#8cb6ce" meeting="false" start="2018-09-05" duration="48" complete="0" thirdDate="2018-09-07" thirdDate-constraint="0" expand="true">
             <task id="69" name="Diario" color="#8cb6ce" meeting="false" start="2018-09-05" duration="48" complete="0" thirdDate="2018-09-03" thirdDate-constraint="0" expand="true"/>
-            <task id="75" name="Analisi" meeting="false" start="2018-09-05" duration="12" complete="0" expand="true">
-                <depend id="120" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="70" name="Progettazione" meeting="false" start="2018-09-21" duration="21" complete="0" expand="true">
-                <depend id="120" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="118" name="Test" color="#8cb6ce" meeting="false" start="2018-11-02" duration="3" complete="0" thirdDate="2018-11-02" thirdDate-constraint="0" expand="true">
-                <depend id="120" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="120" name="Rilettura Correzione" color="#8cb6ce" meeting="false" start="2018-11-07" duration="3" complete="0" thirdDate="2018-11-07" thirdDate-constraint="0" expand="true"/>
+            <task id="75" name="Analisi" meeting="false" start="2018-09-05" duration="12" complete="0" expand="true"/>
+            <task id="70" name="Progettazione" meeting="false" start="2018-09-21" duration="18" complete="0" expand="true"/>
+            <task id="153" name="Implementazione" meeting="false" start="2018-10-17" duration="16" complete="0" expand="true"/>
+            <task id="118" name="Test" color="#8cb6ce" meeting="false" start="2018-10-17" duration="16" complete="0" thirdDate="2018-11-02" thirdDate-constraint="0" expand="true"/>
+            <task id="120" name="Rilettura Correzione" color="#8cb6ce" meeting="false" start="2018-11-09" duration="1" complete="0" thirdDate="2018-11-07" thirdDate-constraint="0" expand="true"/>
+            <task id="155" name="Presentazione" meeting="false" start="2018-11-09" duration="1" complete="0" expand="true"/>
         </task>
     </tasks>
     <resources>
