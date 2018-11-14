@@ -511,7 +511,7 @@
 
             $("#numero").keyup(function () {
                 var text = this.value;
-                var regex = /^((\(?\+?[0-9]*\)?)?[0-9_\- \(\)])$/;
+                var regex = /^((\(?\+?[0-9\s]*\)?)?[0-9_\- \(\)\s])$/;
 
                 if (!regex.test(text)) {
                     $(this).css("border-color", "#ee0000");
@@ -519,7 +519,7 @@
                     $(this).addClass("isNotValid");
                     $(this).removeClass("isEmpty");
                 }
-                else if(text.length > 13){
+                else if(text.length >= 20){
                     $(this).css("border-color", "#ee0000");
                     $(this).removeClass("isEmpty");
                     $(this).removeClass("isValid");
